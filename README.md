@@ -14,3 +14,7 @@ Or you can run it directly in the device:
     ionic run [platform]
 
 > The platforms can be **android**, **ios** or **windows**
+
+The App for Android is available on Play Store as "CodeCamp SDQ Ionic"
+
+https://play.google.com/store/apps/details?id=com.ionicframework.codecampsdq227375
