@@ -1,0 +1,24 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-stable" ng-class="{'tabs-positive': platform == 'android', 'tabs-icon-top': platform != 'android'}">
+
+  <!-- Speeches Tab -->
+  <ion-tab title="Speeches" ng-attr-icon-off="{{ platform != 'android' ? 'ion-ios-chatboxes-outline' : undefined}}" ng-attr-icon-on="{{ platform != 'android' ? 'ion-ios-chatboxes' : undefined}}" href="#/tab/speeches">
+    <ion-nav-view name="tab-speeches"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Speakers Tab -->
+  <ion-tab title="Speakers" ng-attr-icon-off="{{ platform != 'android' ? 'ion-ios-people-outline' : undefined}}" ng-attr-icon-on="{{ platform != 'android' ? 'ion-ios-people' : undefined}}" href="#/tab/speakers">
+    <ion-nav-view name="tab-speakers"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Sponsors Tab -->
+  <ion-tab title="Sponsors" ng-attr-icon-off="{{ platform != 'android' ? 'ion-ios-briefcase-outline' : undefined}}" ng-attr-icon-on="{{ platform != 'android' ? 'ion-ios-briefcase' : undefined}}" href="#/tab/sponsors">
+    <ion-nav-view name="tab-sponsors"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>

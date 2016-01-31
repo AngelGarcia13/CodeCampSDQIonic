@@ -1,0 +1,17 @@
+<ion-view view-title="Speeches">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="speech in speeches" type="item-text-wrap" href="#/tab/speeches/{{speech.id}}">
+        <img ng-src="{{speech.category}}">
+        <h2>{{speech.speech}}</h2>
+        <p>{{speech.description}}</p>
+        <p>{{speech.schedule}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <!--<ion-option-button class="button-assertive" ng-click="remove(speech)">
+          Delete
+        </ion-option-button>-->
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
